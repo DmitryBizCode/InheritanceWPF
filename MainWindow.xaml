@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InheritanceCopybookWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Copybook Shop" Height="400" Width="700">
     <Grid>
-        
+        <Label Content="Kind" HorizontalAlignment="Left" Margin="30,83,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="label" Content="Quantity pages" HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Cost =" HorizontalAlignment="Left" Margin="52,322,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <CheckBox Content="add a cool cover" HorizontalAlignment="Left" Margin="498,42,0,0" VerticalAlignment="Top" Checked="Cool" Unchecked="Simple" FontSize="16"/>
+        <TextBox x:Name="Pages_quantity" HorizontalAlignment="Left" Margin="159,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="50" FontSize="18"/>
+        <ComboBox x:Name="NameKind" HorizontalAlignment="Left" Margin="81,85,0,0" VerticalAlignment="Top" Width="88" FontSize="18">
+            <ComboBoxItem>cell</ComboBoxItem>
+            <ComboBoxItem>stripe</ComboBoxItem>
+            <ComboBoxItem>diagonal stripe</ComboBoxItem>
+            <ComboBoxItem>empty</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="Cover" HorizontalAlignment="Left" Margin="498,70,0,0" VerticalAlignment="Top" Width="88" FontSize="18">
+            <ComboBoxItem>leather</ComboBoxItem>
+            <ComboBoxItem>paper</ComboBoxItem>
+            <ComboBoxItem>cardboard</ComboBoxItem>
+            <ComboBoxItem>art</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="Check" Content="Cheked sum" HorizontalAlignment="Left" Margin="533,328,0,0" VerticalAlignment="Top" Click="Check_Click_1" FontSize="18"/>
+        <Label x:Name="Cost" Content="" HorizontalAlignment="Left" Margin="120,322,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Image HorizontalAlignment="Center" Height="266" Margin="0,90,0,0" VerticalAlignment="Top" Width="208" Source="/goose.jpg"/>
+
+
     </Grid>
 </Window>
